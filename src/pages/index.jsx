@@ -9,7 +9,7 @@ import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 //import {graphql ,// Link } from 'gatsby'
 
-const imageLink = 'http://localhost:8055/assets/'
+const imageLink = 'https://uj1n8ff9.directus.app/assets/'
 
 export default function ({ data: { directus } }) {
 
@@ -30,7 +30,7 @@ export default function ({ data: { directus } }) {
         <TableBody>
           {directus.students.map((student) => (
             <TableRow
-              key={student.id_number}
+              key={student.id}
               sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
             >
               <TableCell align="right"><img

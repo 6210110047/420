@@ -4,13 +4,13 @@ module.exports = {
         {
             resolve: '@directus/gatsby-source-directus',
             options: {
-              url: `http://localhost:8055`, // Fill with your Directus instance address
+              url: `https://uj1n8ff9.directus.app/`, // Fill with your Directus instance address
               auth: {
                 //token: 'my_secret_token', // You can use a static token from an user
       
                 // Or you can use the credentials of an user
-                email: 'admin@test.com',
-                password: '1234',
+                email: '6210110047@psu.ac.th',
+                password: '4!pDGkusQON5d5V]U42itb[S',
               },
             },
           },

@@ -27,7 +27,7 @@ export default function ({ data: { directus } }) {
         <TableBody>
           {directus.subjects.map((subject) => (
             <TableRow
-              key={subject.id_subject}
+              key={subject.id}
               sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
             >
               <TableCell align="right">{subject.id_subject}</TableCell>
