@@ -7,12 +7,17 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
-
+import TextField from '@mui/material/TextField';
 
 export default function ({ data: { directus } }) {
 
+  const [value, setValue] = React.useState(null);
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
+  };
 
   return <>
+    {/* <TextField id="outlined-basic" label="Outlined" variant="outlined" value={value} onChange={handleChange} /> */}
     <TableContainer component={Paper}>
       <Table sx={{ minWidth: 650 }} size="small" aria-label="a dense table">
         <TableHead>
