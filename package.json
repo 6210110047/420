@@ -3,7 +3,7 @@
   "scripts": {
     "dev": "gatsby develop",
     "build": "gatsby build",
-    "deploy": "gh-pages -d public"
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public -b main"
   },
   "dependencies": {
     "@directus/gatsby-source-directus": "^9.14.1",

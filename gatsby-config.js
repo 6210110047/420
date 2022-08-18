@@ -1,5 +1,6 @@
 const {resolve} = require('path')
 module.exports = {
+  pathPrefix: "/420",
     plugins : [
         {
             resolve: '@directus/gatsby-source-directus',
